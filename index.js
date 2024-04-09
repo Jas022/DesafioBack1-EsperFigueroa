@@ -1,5 +1,5 @@
 // import ProductManager from "./productManager.js";
-import ProductManager from "./productManager.js";
+import ProductManager from "./src/productManager.js";
 
 const mockProduct = {
   title: "Producto prueba",
@@ -16,7 +16,8 @@ const mockFailProduct = {
   code: "abc123",
   stock: 25,
 };
-const productManager = new ProductManager("./products.json");
+
+const productManager = new ProductManager("./data/products.json");
 
 const test = async () => {
   console.log("\n---TEST---");

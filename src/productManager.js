@@ -1,6 +1,5 @@
-const fs = require("fs");
-class ProductManager {
-  // #products;
+import fs from "fs";
+export class ProductManager {
   #path;
 
   constructor(path) {
@@ -90,6 +89,3 @@ class ProductManager {
     return newProducts;
   }
 }
-
-// export default ProductManager;
-module.exports = ProductManager;

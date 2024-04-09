@@ -4,6 +4,10 @@ import { ProductManager } from "./productManager.js";
 const app = express();
 const productManager = new ProductManager("./data/products.json");
 
+app.get("/", (req, res) => {
+  res.send("¡Bienvenidos a Artesanias Ste!");
+});
+
 app.get("/products", async (req, res) => {
   const result = await productManager.getProducts();
   const limit = req.query.limit;
